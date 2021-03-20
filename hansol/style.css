@@ -1,0 +1,251 @@
+body {
+    min-width: 1230px;
+}
+
+
+header {
+   text-align: center;
+   height: 82px;
+   font-size: 16px;
+   position: relative;
+}
+header h1 {
+    padding: 14px 0 0;
+    position: absolute;
+    left: 50px;
+    top: 0;
+}
+header h1 a{
+    width: 110px;
+    height: 50px;
+    display: block;
+    color: transparent;
+    background: url(/img/sp_com.png) no-repeat -300px 0
+}
+
+header .lnb li {
+    display: inline-block;
+    
+}
+header .lnb li a {
+    display: block;
+    height: 81px;
+    padding: 0 35px;
+    line-height: 81px;
+    
+}
+
+header .lnb li span {
+    position: relative;
+}
+
+header .lnb li a:hover /*링크에 마우스를 가져가면 색상,밑줄 변화*/ {
+    color: #2d5b79;
+    font-weight: bold; /*폰트 굵게*/
+}
+header .lnb li a:hover span:after {
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    content: "";
+    background: #2d5b79 ;
+    display: block;
+    height: 1px;
+    width: 100%;
+}
+header .spot {
+    position: absolute;
+    right: 50px;
+    top: 0;
+}
+header .spot li{
+    position: relative;
+    float: left;
+}
+header .spot li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 7px;
+    background: #ccc;
+    transform: translateY(-50%) ;
+}
+header .spot li a{
+    display: block;
+    height: 81px;
+    padding: 0 10px;
+    line-height: 81px;
+    font-size: 14px;
+}
+header .spot li:last-child a {
+    padding-right:0 ;
+}
+
+.visual {
+    position: relative;
+    padding: 0 50px;
+}
+.visual .prev, .next {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 45px;
+    background: url(/img/sp_com.png) no-repeat;
+    color: transparent;
+    
+}
+
+.visual .prev{
+    left: 90px;
+    background-position: -128px -60px;
+}
+.visual .next {
+    right: 90px;
+    background-position: -158px -60px;
+}
+.visual .con > div {
+    height: 640px;
+}
+.visual .con .slide {
+    background:url(/img/bg_main00.jpg) no-repeat center;
+    color: white;
+    font-size: 32px;
+    
+}
+.visual .con .slide .txt {
+    position: absolute;
+    left: 50%;
+    top: 152px;
+    line-height: 46px;
+}
+.visual .con .slide p {
+    font-size: 20px;
+    padding: 19px;
+    line-height: 100%;
+}
+
+.visual .control {
+    position: absolute;
+    bottom: 55px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+.visual .control > div {
+    display: inline-block;
+    position: relative;
+    padding: 0 45px 0 0;
+}
+.visual .control > div > div {
+    position: absolute; 
+    right: 0;
+} 
+
+.visual .control li a {
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: rgba(255,255,255,0.5);
+    color: transparent;
+    
+}
+
+.visual .control ul, 
+.visual .control li {
+    position: relative;
+    top: -3px;
+    display: inline-block;
+    font-size: 0;
+    padding: 0 3px;
+}
+
+.visual .control .on {
+    background:white;
+}
+.visual .control a.on {
+    opacity: 1;
+}
+.visual .control > div >div a {
+    display: inline-block;
+    width: 8px;
+    height: 9px;
+    overflow: hidden;
+    color: transparent;
+    background: url(/img/sp_com.png) no-repeat;
+}
+.visual .control > div >div a.play {
+    background-position: -108px -72px ;
+}
+.visual .control > div >div a.pause {
+    background-position: -108px -60px ;
+}
+.product ul {
+    text-align: center;
+   font-size: 0;
+}
+.product ul li {
+    text-align: center;
+    display: inline-block;
+    padding: 0 55px;
+}
+
+.product  a{
+    font-size: 15px;
+    color: #001829;
+}
+
+.product a:hover{
+    font-weight: bold;
+    color: #2d5b79;
+}
+
+.product a:before{
+    content: "";
+    display: block;
+    background: url(/img/sp_com.png) no-repeat;
+    width: 68px;
+    height: 50px;
+    margin: 26px;
+}
+
+.product li:nth-child(1) a::before {
+    background-position: -2px -118px;
+}
+.product li:nth-child(2) a::before {
+    background-position: -75px -118px;
+}
+.product li:nth-child(3) a::before {
+    background-position: -148px -118px;
+}
+.product li:nth-child(4) a::before {
+    background-position: -219px -118px;
+}
+.product li:nth-child(5) a::before {
+    background-position: -292px -118px;
+}
+.product li:nth-child(6) a::before {
+    background-position: -364px -118px;
+}
+
+.product li:nth-child(1) a:hover:before {
+    background-position: -2px -184px;
+}
+.product li:nth-child(2) a:hover:before  {
+    background-position: -75px -184px;
+}
+.product li:nth-child(3) a:hover:before  {
+    background-position: -148px -184px;
+}
+.product li:nth-child(4) a:hover:before  {
+    background-position: -219px -184px;
+}
+.product li:nth-child(5) a:hover:before {
+    background-position: -292px -184px;
+}
+.product li:nth-child(6) a:hover:before {
+    background-position: -364px -184px;
+}
